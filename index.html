@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aswin Sambhu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Special Elite', monospace;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  color:white;
+  background:#000;
+}
+
+/* 🔥 REAL LIQUID RGB BACKGROUND */
+.bg{
+  position:fixed;
+  width:200%;
+  height:200%;
+  filter:blur(120px);
+  z-index:-1;
+  background:linear-gradient(45deg, red, green, blue, red);
+  background-size:400% 400%;
+  animation:liquidMove 12s ease infinite;
+}
+
+@keyframes liquidMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* MAIN CONTAINER */
+.container{
+  text-align:center;
+  backdrop-filter:blur(15px);
+}
+
+/* PROFILE IMAGE */
+.profile{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:3px solid white;
+  margin:auto;
+  background:#222;
+  background-size:cover;
+  background-position:center;
+}
+
+/* TYPEWRITER NAME */
+.name{
+  margin-top:20px;
+  font-size:28px;
+  letter-spacing:2px;
+  border-right:3px solid white;
+  width:0ch;
+  white-space:nowrap;
+  overflow:hidden;
+  animation:
+    typing 3s steps(13) forwards,
+    blink 0.7s infinite;
+}
+
+@keyframes typing{
+  from{width:0ch;}
+  to{width:13ch;}
+}
+
+@keyframes blink{
+  50%{border-color:transparent;}
+}
+
+/* INSTAGRAM */
+.insta{
+  display:inline-block;
+  margin-top:15px;
+  font-size:26px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.insta:hover{
+  transform:scale(1.2) rotate(10deg);
+}
+
+/* LINKS AREA */
+.links{
+  margin-top:30px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+/* BUTTON STYLE */
+.btn{
+  width:260px;
+  padding:12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.4);
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.logoBox{
+  width:35px;
+  height:35px;
+  border-radius:8px;
+  background:rgba(255,255,255,0.2);
+}
+
+.btn span{
+  flex:1;
+  text-align:left;
+}
+
+.btn:hover{
+  transform:rotateX(8deg) rotateY(-8deg) scale(1.05);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+  <!-- ADD YOUR PROFILE IMAGE LINK -->
+  <div class="profile" style="background-image:url('YOUR_PROFILE_IMAGE_LINK');"></div>
+
+  <!-- TYPEWRITER NAME -->
+  <div class="name">Aswin Sambhu</div>
+
+  <!-- INSTAGRAM LINK -->
+  <a class="insta" href="https://instagram.com/YOURUSERNAME" target="_blank">
+    📷 Instagram
+  </a>
+
+  <!-- BUTTONS -->
+  <div class="links">
+
+    <div class="btn">
+      <div class="logoBox"></div>
+      <span>My Gaming Channel</span>
+    </div>
+
+    <div class="btn">
+      <div class="logoBox"></div>
+      <span>Discord Server</span>
+    </div>
+
+    <div class="btn">
+      <div class="logoBox"></div>
+      <span>Xbox Profile</span>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
