@@ -1,85 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ASWIN SAMBHU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: url('background.jpg') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
 
-        .container {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 30px;
-            border-radius: 15px;
-            width: 320px;
-            backdrop-filter: blur(5px);
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        .profile-section {
-            display: flex;
-            align-items: center;
-            margin-bottom: 25px;
-        }
+<style>
 
-        .profile-pic {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 15px;
-            margin-left: -20px; /* Off center */
-            border: 2px solid white;
-        }
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#0f2f2c;
+    color:white;
+}
 
-        .name {
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
+/* NAVBAR */
 
-        .link {
-            display: block;
-            text-decoration: none;
-            color: white;
-            background: rgba(255, 255, 255, 0.15);
-            padding: 12px;
-            margin: 10px 0;
-            border-radius: 10px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.3);
-        }
+nav{
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
 
-        .link:hover {
-            background: rgba(255, 255, 255, 0.25);
-        }
-    </style>
+/* HERO */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero h1{
+    font-size:70px;
+    letter-spacing:5px;
+}
+
+/* BACKGROUND ELEMENTS */
+
+.circle{
+    position:absolute;
+    border:2px solid #c9a96e;
+    border-radius:50%;
+}
+
+.circle1{
+    width:300px;
+    height:300px;
+    top:-100px;
+    right:-100px;
+}
+
+.circle2{
+    width:200px;
+    height:200px;
+    bottom:-80px;
+    left:-80px;
+}
+
+.lines{
+    position:absolute;
+    width:120px;
+    height:120px;
+    top:40%;
+    right:10%;
+}
+
+.lines div{
+    width:100%;
+    height:3px;
+    background:#c9a96e;
+    margin:8px 0;
+    transform:rotate(45deg);
+}
+
+/* SECTION */
+
+.section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.section h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+/* EXPERIENCE */
+
+.exp-item{
+    margin-bottom:20px;
+    border-left:3px solid #c9a96e;
+    padding-left:15px;
+}
+
+/* WORK GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#133d39;
+    padding:15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* LINK BUTTONS */
+
+.links{
+    text-align:center;
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#0f2f2c;
+    background:#c9a96e;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#0f2f2c;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    font-size:20px;
+}
+
+</style>
+
 </head>
-
 <body>
 
-<div class="container">
+<nav>MY PORTFOLIO</nav>
 
-    <div class="profile-section">
-        <img src="profile.jpg" class="profile-pic">
-        <div class="name">ASWIN SAMBHU</div>
+<div class="hero">
+    <h1>PORTFOLIO</h1>
+
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+
+    <div class="lines">
+        <div></div><div></div><div></div><div></div>
+    </div>
+</div>
+
+<!-- EXPERIENCE -->
+
+<div class="section">
+    <h2>Working Experience</h2>
+
+    <div class="exp-item">
+        <h3>Graphic Designer - 2023</h3>
+        <p>Worked on logo designs and branding.</p>
     </div>
 
-    <a href="https://www.instagram.com/aswinsambhu?igsh=MXIyNmF3bmljYWZzeQ==" class="link">Instagram</a>
-    <a href="https://aratt.ai/user/@aswinsambhu" class="link">Arattai</a>
-    <a href="#" class="link">⌲</a>
-    <a href="https://discord.gg/RP5Hz5vsdK" class="link">Discord 💬</a>
-
+    <div class="exp-item">
+        <h3>Freelancer - 2024</h3>
+        <p>Created UI designs and client projects.</p>
+    </div>
 </div>
+
+<!-- WORKS -->
+
+<div class="section">
+    <h2>My Latest Works</h2>
+
+    <div class="grid">
+        <div class="card">Project 1</div>
+        <div class="card">Project 2</div>
+        <div class="card">Project 3</div>
+        <div class="card">Project 4</div>
+    </div>
+</div>
+
+<!-- LINKS -->
+
+<div class="section links">
+    <h2>My Links</h2>
+
+    <a href="#" class="btn">GitHub</a>
+    <a href="#" class="btn">Fiverr</a>
+    <a href="#" class="btn">Instagram</a>
+</div>
+
+<footer>
+    Thank You ✨
+</footer>
 
 </body>
 </html>
