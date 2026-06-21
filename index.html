@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aswin Sambhu | Retro Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading profile">
+    <div class="loader-window">
+      <img src="bg.png.png" alt="BG logo" class="loader-logo">
+      <p class="loader-title">Booting Aswin Sambhu</p>
+      <div class="loading-track">
+        <span></span>
+      </div>
+      <p class="loader-note" id="loaderNote">Winding the cassette...</p>
+    </div>
+  </div>
+
+  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Toggle tiny retro sounds" title="Tiny clicks">
+    <span>SND</span>
+  </button>
+
+  <div class="road-runner" aria-hidden="true">
+    <div class="car">
+      <span class="car-body"></span>
+      <span class="wheel wheel-left"></span>
+      <span class="wheel wheel-right"></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <a href="#home" class="brand-mark">
+        <img src="bg.png.png" alt="BG logo">
+      </a>
+      <div class="nav-links">
+        <a href="#bio">Bio</a>
+        <a href="#links">Links</a>
+        <a href="#gaming">Gaming</a>
+        <a href="#fun">Fun</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Classic personal web station</p>
+        <h1>Aswin Sambhu</h1>
+        <p class="tagline" id="tagline">Profile, links, gaming trail, and small moving nonsense.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#links">Open Links</a>
+          <a class="button secondary" href="#gaming">Gaming Profile</a>
+        </div>
+      </div>
+      <div class="desk-scene reveal" aria-label="Retro desk illustration">
+        <div class="monitor">
+          <div class="monitor-screen">
+            <span class="scanline"></span>
+            <p id="terminalLine">C:\ASWIN&gt; hello_world.exe</p>
+            <div class="pixel-face" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="monitor-stand"></div>
+        </div>
+        <div class="floppy">SAVE</div>
+        <div class="coffee">HOT</div>
+      </div>
+    </section>
+
+    <section class="section bio-grid" id="bio">
+      <div class="section-title reveal">
+        <p class="eyebrow">About file</p>
+        <h2>Bio</h2>
+      </div>
+      <article class="panel about-panel reveal">
+        <h3>About</h3>
+        <p id="aboutText">
+          Hey, I am Aswin. This is my retro profile corner for links, games, ideas, and the occasional tiny car.
+        </p>
+        <div class="stamp-row" aria-hidden="true">
+          <span>100% editable</span>
+          <span>no neon</span>
+          <span>classic mode</span>
+        </div>
+      </article>
+      <article class="panel age-panel reveal">
+        <h3>Age Clock</h3>
+        <p class="birthday">Born: December 1, 2008</p>
+        <div class="age-readout" id="ageReadout" aria-live="polite"></div>
+        <p class="micro-copy">This updates every second and keeps counting every day.</p>
+      </article>
+    </section>
+
+    <section class="section" id="links">
+      <div class="section-title reveal">
+        <p class="eyebrow">Directory</p>
+        <h2>Links</h2>
+      </div>
+      <div class="link-grid reveal" id="linksGrid"></div>
+    </section>
+
+    <section class="section gaming-section" id="gaming">
+      <div class="section-title reveal">
+        <p class="eyebrow">Player card</p>
+        <h2>Gaming Profile</h2>
+      </div>
+      <div class="gaming-layout">
+        <article class="panel player-card reveal">
+          <div class="avatar-dial" aria-hidden="true">A</div>
+          <h3 id="gamerTag">ASWIN_08</h3>
+          <p id="gamerStatus">Currently farming wins, snacks, and suspiciously good excuses.</p>
+          <div class="meter">
+            <span style="--level: 78%"></span>
+          </div>
+          <p class="micro-copy">Vibe meter: steady classic chaos.</p>
+        </article>
+        <div class="stats-board reveal" id="statsBoard"></div>
+      </div>
+    </section>
+
+    <section class="section fun-section" id="fun">
+      <div class="section-title reveal">
+        <p class="eyebrow">Odd little machines</p>
+        <h2>Fun Stuff</h2>
+      </div>
+      <div class="fun-grid">
+        <button class="toy panel reveal" id="fortuneBtn" type="button">
+          <span class="toy-icon">?</span>
+          <strong>Retro Fortune</strong>
+          <small id="fortuneText">Click for a tiny prophecy.</small>
+        </button>
+        <button class="toy panel reveal" id="stampBtn" type="button">
+          <span class="toy-icon">OK</span>
+          <strong>Stamp Machine</strong>
+          <small id="stampText">Click to approve the page.</small>
+        </button>
+        <button class="toy panel reveal" id="danceBtn" type="button">
+          <span class="toy-icon">TV</span>
+          <strong>Desk Dance</strong>
+          <small>Make the monitor do a little wobble.</small>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made for Aswin Sambhu. Edit the text, links, and stats in <strong>script.js</strong>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
