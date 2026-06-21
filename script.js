@@ -3,19 +3,19 @@ const profile = {
   birthday: "2008-12-01T00:00:00",
   tagline: "Profile, links, gaming trail, and small moving nonsense.",
   about:
-    "Hey, I am Aswin. This is my retro profile corner for links, games, ideas, and the occasional tiny car.",
-  gamerTag: "ASWIN_08",
+    "My name is Aswin Sambhu . I'm good at gaming you know ? . Kidding! I'm a student .",
+  gamerTag: "ASWIN_07",
   gamerStatus: "Currently farming wins, snacks, and suspiciously good excuses.",
   links: [
     {
       title: "Instagram",
-      url: "https://instagram.com/",
-      note: "Photos, posts, and daily updates."
+      url: "https://www.instagram.com/aswinsambhu?igsh=MXIyNmF3bmljYWZzeQ==",
+      note: "Photos, posts, and what ? NOTHING."
     },
     {
       title: "YouTube",
       url: "https://youtube.com/",
-      note: "Videos, edits, streams, and clips."
+      note: "IDK."
     },
     {
       title: "Discord",
@@ -24,15 +24,15 @@ const profile = {
     },
     {
       title: "GitHub",
-      url: "https://github.com/",
-      note: "Projects, experiments, and code."
+      url: "https://aswinsambhu.github.io/aswinsambhu/",
+      note: "Something......"
     }
   ],
   stats: [
-    { label: "Main Game", value: "Edit Me" },
-    { label: "Rank", value: "Classic" },
-    { label: "Play Style", value: "Calm Rush" },
-    { label: "Snack Buff", value: "+20" }
+    { label: "Minecraft", value: "MAIN GAME" },
+    { label: "Trying to do better,but not too bad", value: "LEVEL" },
+    { label: "Calm and Rush", value: "Player" },
+    { label: "100 $   + RESPECT", value: "Earnings" }
   ],
   fortunes: [
     "Today you will dodge lag by pure confidence.",
